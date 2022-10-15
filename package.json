@@ -1,12 +1,14 @@
 {
   "name": "example-joker",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "An example application that tells bad jokes",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "node src/js/joker.js",
-    "format": "prettier -w src/js/joker.js"
+    "format": "prettier -w src/**/*.js",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/Fermain/joker#readme",
   "devDependencies": {
+    "eslint": "^8.25.0",
     "prettier": "^2.7.1"
   },
   "dependencies": {
