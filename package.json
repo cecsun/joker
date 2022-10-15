@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "node src/js/joker.js",
-    "format": "prettier -w src/**/*.js"
+    "format": "prettier -w src/**/*.js",
+    "lint": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
