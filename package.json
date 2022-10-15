@@ -1,0 +1,23 @@
+{
+  "name": "joker",
+  "version": "0.0.1",
+  "description": "An example application that tells bad jokes",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fermain/joker.git"
+  },
+  "keywords": [
+    "joke"
+  ],
+  "author": "Oliver Dipple <oliver.dipple@noroff.no>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fermain/joker/issues"
+  },
+  "homepage": "https://github.com/Fermain/joker#readme"
+}
