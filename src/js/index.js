@@ -1,7 +1,7 @@
 import { dadJoke } from './joker.js';
 
 const jokeContainer = document.querySelector('blockquote');
-const jokeButton = document.querySelector('button.dad-joke');;
+const jokeButton = document.querySelector('button.dad-joke');
 const jokeButtonText = jokeButton.querySelector('.joke-text');
 const originalText = jokeButtonText.textContent;
 
