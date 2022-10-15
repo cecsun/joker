@@ -1,5 +1,5 @@
 {
-  "name": "joker",
+  "name": "@example/joker",
   "version": "0.0.4",
   "description": "An example application that tells bad jokes",
   "main": "src/index.js",
