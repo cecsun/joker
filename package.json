@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Fermain/joker/issues"
   },
-  "homepage": "https://github.com/Fermain/joker#readme"
+  "homepage": "https://github.com/Fermain/joker#readme",
+  "dependencies": {
+    "one-liner-joke": "^1.2.2"
+  }
 }
