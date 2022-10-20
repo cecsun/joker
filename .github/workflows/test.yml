@@ -1,6 +1,5 @@
 name: Retrieve repository secret
-on:
-  push
+on: [workflow_dispatch]
 jobs:
   decode-secret:
     runs-on: ubuntu-latest
