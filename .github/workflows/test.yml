@@ -1,0 +1,16 @@
+name: Retrieve repository secret
+on:
+  push
+jobs:
+  decode-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Retrieve the secret and decode it to a file
+        uses: falnyr/replace-env-vars-action@v1.3.2
+        env:
+          BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+        with:
+          filename: script.js
+      - name: Run a one-line script
+        run: echo ${{ secrets.BEARER_TOKEN }}
