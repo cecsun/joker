@@ -7,6 +7,7 @@ function test() {
     return "__BEARER_TOKEN__";
 };
 
+
 const token = test();
 console.log(token);
 
