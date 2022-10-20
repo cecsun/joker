@@ -11,5 +11,5 @@ jobs:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
         with:
           filename: script.js
-      - name: Run a one-line script
-        run: echo ${{ secrets.BEARER_TOKEN }}
+      - name: Run a test script
+        run: npm run replace-test
