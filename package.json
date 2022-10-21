@@ -1,6 +1,6 @@
 {
   "name": "example-joker",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "An example application that tells bad jokes",
   "main": "src/index.js",
   "type": "module",
@@ -9,7 +9,7 @@
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
-    "replace-test": "node script.js"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,23 @@
   "homepage": "https://github.com/Fermain/joker#readme",
   "devDependencies": {
     "eslint": "^8.25.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
   "dependencies": {
     "give-me-a-joke": "^0.5.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
   }
 }
